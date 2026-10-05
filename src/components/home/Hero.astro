@@ -2,19 +2,41 @@
 import { SITE } from '@/config/site';
 ---
 
-<section class="relative bg-background border-b border-border py-12 md:py-20" data-ps="src/components/home/Hero.astro:ah8lbi">
+<section class="relative bg-background border-b border-border py-8 md:py-14" data-ps="src/components/home/Hero.astro:ah8lbi">
   <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/components/home/Hero.astro:iy4taf">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center" data-ps="src/components/home/Hero.astro:iy4tag">
       
       <!-- Colonne Texte & Identité Déontologique (7/12) -->
-      <div class="lg:col-span-7 space-y-6" data-ps="src/components/home/Hero.astro:iy4tah">
-        <h1 class="font-serif text-h1 font-bold text-foreground tracking-tight m-0 leading-tight" data-ps="src/components/home/Hero.astro:307k1o">
-          Camille Durand, pédicure-podologue
+      <div class="lg:col-span-7 space-y-4" data-ps="src/components/home/Hero.astro:iy4tah">
+        <h1 class="font-serif text-h1 lg:text-[3.25rem] font-bold text-foreground tracking-tight m-0 leading-tight" data-ps="src/components/home/Hero.astro:307k1o">
+          Camille Durand, <span class="whitespace-nowrap">pédicure-podologue</span>
         </h1>
 
         <p class="text-lg md:text-xl text-muted-foreground font-normal leading-relaxed m-0" data-ps="src/components/home/Hero.astro:6uykn3">
           Cabinet de pédicurie-podologie pour la prise en charge des affections épidermiques et unguéales, l'examen podologique de la marche, et la confection d'orthèses plantaires.
         </p>
+
+        <!-- Actions de contact et prise de rendez-vous -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2" data-ps="src/components/home/Hero.astro:ecxgf8">
+          <a
+            href={SITE.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold rounded-xs bg-primary text-primary-foreground hover:bg-primary-hover transition-colors shadow-xs"
+           data-ps="src/components/home/Hero.astro:8zc15">
+            Prendre rendez-vous
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+
+          <a
+            href="/soins"
+            class="inline-flex items-center justify-center px-5 py-3.5 text-base font-medium rounded-xs bg-surface text-foreground hover:bg-secondary border border-border transition-colors no-underline"
+           data-ps="src/components/home/Hero.astro:8zc16">
+            Consulter les actes dispensés
+          </a>
+        </div>
 
         <!-- Grille des repères administratifs et réglementaires -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 py-2 border-y border-border" data-ps="src/components/home/Hero.astro:ecxgf3">
@@ -38,28 +60,6 @@ import { SITE } from '@/config/site';
             <span class="text-sm font-medium text-foreground" data-ps="src/components/home/Hero.astro:z1i1xa">Rez-de-chaussée</span>
             <span class="block text-xs text-muted-foreground" data-ps="src/components/home/Hero.astro:z1i1wo">Conforme normes PMR</span>
           </div>
-        </div>
-
-        <!-- Actions de contact et prise de rendez-vous -->
-        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2" data-ps="src/components/home/Hero.astro:ecxgf8">
-          <a
-            href={SITE.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold rounded-xs bg-primary text-primary-foreground hover:bg-primary-hover transition-colors shadow-xs"
-           data-ps="src/components/home/Hero.astro:8zc15">
-            Prendre rendez-vous
-            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
-
-          <a
-            href="/soins"
-            class="inline-flex items-center justify-center px-5 py-3.5 text-base font-medium rounded-xs bg-surface text-foreground hover:bg-secondary border border-border transition-colors no-underline"
-           data-ps="src/components/home/Hero.astro:8zc16">
-            Consulter les actes dispensés
-          </a>
         </div>
       </div>
 
