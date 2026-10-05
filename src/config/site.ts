@@ -1,21 +1,20 @@
 export const SITE = {
   name: 'Camille Durand — Pédicure-podologue (EI)',
   title: 'Camille Durand — Pédicure-podologue à Toulon',
-  description: 'Cabinet de pédicurie-podologie à Toulon. Soins de pédicurie, bilans podologiques, semelles orthopédiques sur mesure et soins à domicile.',
+  description: 'Cabinet de pédicurie-podologie à Toulon. Soins de pédicurie, bilans podologiques, orthèses plantaires et soins à domicile.',
   lang: 'fr',
   url:
     (typeof process !== 'undefined' && process.env.SITE_URL) ||
     'https://example.com',
-  rpps: '10101987654',
-  adeli: '830000000',
+  rpps: '00000000000 (fictif)',
   address: {
-    street: '14 Boulevard de Strasbourg',
+    street: '12 rue Exemple',
     postalCode: '83000',
     city: 'Toulon',
     region: 'Var, Provence-Alpes-Côte d’Azur',
     access: 'Rez-de-chaussée — Accès conforme personnes à mobilité réduite (PMR)',
-    parking: 'Parking public Liberté et Place d’Armes à proximité',
-    transit: 'Réseau Mistral : Arrêt Liberté / Vauban (Lignes 1, 3, 9, 15)',
+    parking: 'Informations d’accès à compléter',
+    transit: 'Informations d’accès à compléter',
   },
   hours: {
     weekdays: 'Du lundi au vendredi : 8h30 – 19h00',

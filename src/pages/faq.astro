@@ -5,7 +5,7 @@ import { SITE } from '@/config/site';
 
 <BaseLayout
   title="Questions fréquentes (FAQ) | Camille Durand — Pédicure-Podologue à Toulon"
-  description="Réponses aux questions pratiques : durée d'un soin, documents à apporter, prise en charge par la mutuelle et conditions des soins à domicile."
+  description="Réponses aux questions pratiques : durée d'un soin, documents à apporter et conditions des soins à domicile."
   jsonLd={{
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -15,7 +15,7 @@ import { SITE } from '@/config/site';
         name: "Faut-il une ordonnance pour consulter un pédicure-podologue ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Pour un soin de pédicurie, la consultation est en accès direct sans ordonnance. Pour bénéficier du remboursement des semelles orthopédiques par la Sécurité Sociale et votre mutuelle, une prescription médicale préalable de votre médecin traitant est requise."
+          text: "Pour toute question sur l'ordonnance ou sur la prise en charge, merci de contacter le cabinet lors de la prise de rendez-vous."
         }
       },
       {
@@ -23,7 +23,7 @@ import { SITE } from '@/config/site';
         name: "Que faut-il apporter lors d'un bilan podologique ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Merci de vous munir de votre ordonnance médicale, de vos examens d'imagerie récents (radiographies, IRM), de vos chaussures habituelles de marche ou de travail, et de vos chaussures de sport si vous pratiquez une activité physique régulière."
+          text: "Merci de vous munir de vos chaussures habituelles et de tout document utile à votre venue."
         }
       },
       {
@@ -36,10 +36,10 @@ import { SITE } from '@/config/site';
       },
       {
         '@type': 'Question',
-        name: "Comment se déroule la confection des semelles orthopédiques ?",
+        name: "Comment se déroule la confection des orthèses plantaires ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Les semelles sont fabriquées sur mesure au sein de l'atelier du cabinet suite au bilan podologique. Un rendez-vous de remise et d'essayage est fixé dans un délai de 7 à 10 jours, suivi d'un contrôle gratuit à un mois."
+          text: "Les orthèses plantaires sont fabriquées au sein de l'atelier du cabinet suite au bilan podologique. Un rendez-vous de remise et d'essayage est fixé dans un délai de 7 à 10 jours, suivi d'une consultation de contrôle qui peut être proposée pour vérifier l'adaptation."
         }
       },
       {
@@ -55,7 +55,7 @@ import { SITE } from '@/config/site';
         name: "Le cabinet est-il accessible aux personnes en fauteuil roulant ?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Oui, le cabinet est situé en rez-de-chaussée de plain-pied et répond à l'ensemble des normes d'accessibilité PMR en vigueur."
+          text: "Oui. Le cabinet est situé au rez-de-chaussée, avec un accès de plain-pied."
         }
       }
     ]
@@ -84,7 +84,7 @@ import { SITE } from '@/config/site';
             Faut-il une ordonnance pour consulter ?
           </h2>
           <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/faq.astro:3y7145">
-            Pour un soin de pédicurie médicale, la consultation est en accès direct sans obligation d'ordonnance. En revanche, pour la réalisation d'orthèses plantaires (semelles orthopédiques) ouvrant droit à une prise en charge par l'Assurance Maladie et votre mutuelle, une prescription médicale établie par votre médecin traitant est nécessaire.
+            Pour toute question sur l'ordonnance ou sur la prise en charge, merci de contacter le cabinet lors de la prise de rendez-vous.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ import { SITE } from '@/config/site';
             Que faut-il apporter pour un bilan podologique ?
           </h2>
           <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/faq.astro:3y7146">
-            Il est conseillé d'apporter votre ordonnance médicale, vos examens complémentaires récents (radiographies du bassin, des genoux ou des pieds, échographies, IRM), ainsi que 2 ou 3 paires de chaussures représentatives de votre quotidien (chaussures de ville, de travail et chaussures de sport).
+            Merci de vous munir de vos chaussures habituelles et de tout document utile à votre venue.
           </p>
         </div>
 
@@ -104,17 +104,17 @@ import { SITE } from '@/config/site';
             Quelle est la durée d'une consultation ?
           </h2>
           <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/faq.astro:3y7147">
-            Un soin complet de pédicurie médicale dure en moyenne 45 minutes. Un bilan podologique et postural approfondi requiert entre 45 et 60 minutes selon la complexité de l'examen clinique.
+            Un soin complet de pédicurie dure en moyenne 45 minutes. Un bilan podologique approfondi requiert entre 45 et 60 minutes selon la complexité de l'examen clinique.
           </p>
         </div>
 
         <!-- Q4 -->
         <div class="p-6 bg-background border border-border rounded-xs space-y-2" data-ps="src/pages/faq.astro:2mg1wf">
           <h2 class="font-serif text-lg font-bold text-foreground m-0" data-ps="src/pages/faq.astro:63z1um">
-            Quel est le délai de fabrication des semelles ?
+            Quel est le délai de fabrication des orthèses plantaires ?
           </h2>
           <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/faq.astro:3y7148">
-            Les semelles orthopédiques sont entièrement confectionnées sur place par Camille Durand. Le délai moyen est d'une semaine entre le bilan initial et la séance d'essayage. Un contrôle gratuit d'adaptation est systématiquement réalisé à 4-6 semaines.
+            Les orthèses plantaires sont confectionnées au cabinet. Le délai est précisé lors du bilan podologique.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ import { SITE } from '@/config/site';
             Le cabinet est-il adapté aux personnes à mobilité réduite ?
           </h2>
           <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/faq.astro:3y714a">
-            Oui. Le cabinet est situé au rez-de-chaussée, dispose d'un accès de plain-pied sans marche et est parfaitement conforme aux normes PMR (portes élargies, dégagements, sanitaires adaptés).
+            Oui. Le cabinet est situé au rez-de-chaussée, avec un accès de plain-pied.
           </p>
         </div>
 
