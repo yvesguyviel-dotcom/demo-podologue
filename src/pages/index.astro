@@ -1,0 +1,42 @@
+---
+import { SITE } from '@/config/site';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/home/Hero.astro';
+import SoinsOverview from '@/components/home/SoinsOverview.astro';
+import PractitionerCredentials from '@/components/home/PractitionerCredentials.astro';
+import AccessHours from '@/components/home/AccessHours.astro';
+---
+
+<BaseLayout
+  title={`${SITE.title} | Soins, Bilans & Semelles`}
+  description={SITE.description}
+  type="website"
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'MedicalBusiness',
+    '@id': `${SITE.url}/#practice`,
+    name: SITE.name,
+    description: SITE.description,
+    url: new URL(Astro.url.pathname, SITE.url).toString(),
+    telephone: SITE.phone,
+    email: SITE.email,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: SITE.address.street,
+      addressLocality: SITE.address.city,
+      postalCode: SITE.address.postalCode,
+      addressCountry: 'FR',
+    },
+    openingHours: [
+      'Mo-Fr 08:30-19:00',
+      'Sa 08:30-12:30',
+    ],
+    medicalSpecialty: 'Podiatric',
+    hasCredential: "Diplôme d'État de Pédicure-Podologue",
+  }}
+>
+  <Hero />
+  <SoinsOverview />
+  <PractitionerCredentials />
+  <AccessHours />
+</BaseLayout>

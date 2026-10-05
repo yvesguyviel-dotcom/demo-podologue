@@ -1,0 +1,151 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+---
+
+<BaseLayout
+  title="Questions fréquentes (FAQ) | Camille Durand — Pédicure-Podologue à Toulon"
+  description="Réponses aux questions pratiques : durée d'un soin, documents à apporter, prise en charge par la mutuelle et conditions des soins à domicile."
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: "Faut-il une ordonnance pour consulter un pédicure-podologue ?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Pour un soin de pédicurie, la consultation est en accès direct sans ordonnance. Pour bénéficier du remboursement des semelles orthopédiques par la Sécurité Sociale et votre mutuelle, une prescription médicale préalable de votre médecin traitant est requise."
+        }
+      },
+      {
+        '@type': 'Question',
+        name: "Que faut-il apporter lors d'un bilan podologique ?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Merci de vous munir de votre ordonnance médicale, de vos examens d'imagerie récents (radiographies, IRM), de vos chaussures habituelles de marche ou de travail, et de vos chaussures de sport si vous pratiquez une activité physique régulière."
+        }
+      },
+      {
+        '@type': 'Question',
+        name: "Combien de temps dure une séance ?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Un soin de pédicurie dure environ 45 minutes. Un bilan podologique complet nécessite entre 45 et 60 minutes."
+        }
+      },
+      {
+        '@type': 'Question',
+        name: "Comment se déroule la confection des semelles orthopédiques ?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Les semelles sont fabriquées sur mesure au sein de l'atelier du cabinet suite au bilan podologique. Un rendez-vous de remise et d'essayage est fixé dans un délai de 7 à 10 jours, suivi d'un contrôle gratuit à un mois."
+        }
+      },
+      {
+        '@type': 'Question',
+        name: "Quelles sont les conditions pour un soin à domicile ?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Les soins à domicile sont strictement réservés aux personnes à mobilité réduite ou en incapacité physique de déplacement sur la commune de Toulon. La prise de rendez-vous se fait uniquement par téléphone."
+        }
+      },
+      {
+        '@type': 'Question',
+        name: "Le cabinet est-il accessible aux personnes en fauteuil roulant ?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Oui, le cabinet est situé en rez-de-chaussée de plain-pied et répond à l'ensemble des normes d'accessibilité PMR en vigueur."
+        }
+      }
+    ]
+  }}
+>
+  <section class="py-12 md:py-20 bg-background border-b border-border" data-ps="src/pages/faq.astro:tnsbcj">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/pages/faq.astro:aapkxf">
+      <div class="max-w-3xl space-y-4" data-ps="src/pages/faq.astro:2mg1wl">
+        <h1 class="font-serif text-h1 font-bold text-foreground m-0" data-ps="src/pages/faq.astro:ksdz2a">
+          Questions fréquentes
+        </h1>
+        <p class="text-lg md:text-xl text-muted-foreground leading-relaxed m-0" data-ps="src/pages/faq.astro:3y7144">
+          Informations pratiques pour préparer votre consultation au cabinet de pédicurie-podologie.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-surface" data-ps="src/pages/faq.astro:tnsbck">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/pages/faq.astro:2mg1wk">
+      <div class="max-w-3xl mx-auto space-y-6" data-ps="src/pages/faq.astro:2mg1wj">
+        
+        <!-- Q1 -->
+        <div class="p-6 bg-background border border-border rounded-xs space-y-2" data-ps="src/pages/faq.astro:2mg1wi">
+          <h2 class="font-serif text-lg font-bold text-foreground m-0" data-ps="src/pages/faq.astro:63z1ty">
+            Faut-il une ordonnance pour consulter ?
+          </h2>
+          <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/faq.astro:3y7145">
+            Pour un soin de pédicurie médicale, la consultation est en accès direct sans obligation d'ordonnance. En revanche, pour la réalisation d'orthèses plantaires (semelles orthopédiques) ouvrant droit à une prise en charge par l'Assurance Maladie et votre mutuelle, une prescription médicale établie par votre médecin traitant est nécessaire.
+          </p>
+        </div>
+
+        <!-- Q2 -->
+        <div class="p-6 bg-background border border-border rounded-xs space-y-2" data-ps="src/pages/faq.astro:2mg1wh">
+          <h2 class="font-serif text-lg font-bold text-foreground m-0" data-ps="src/pages/faq.astro:63z1uk">
+            Que faut-il apporter pour un bilan podologique ?
+          </h2>
+          <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/faq.astro:3y7146">
+            Il est conseillé d'apporter votre ordonnance médicale, vos examens complémentaires récents (radiographies du bassin, des genoux ou des pieds, échographies, IRM), ainsi que 2 ou 3 paires de chaussures représentatives de votre quotidien (chaussures de ville, de travail et chaussures de sport).
+          </p>
+        </div>
+
+        <!-- Q3 -->
+        <div class="p-6 bg-background border border-border rounded-xs space-y-2" data-ps="src/pages/faq.astro:2mg1wg">
+          <h2 class="font-serif text-lg font-bold text-foreground m-0" data-ps="src/pages/faq.astro:63z1ul">
+            Quelle est la durée d'une consultation ?
+          </h2>
+          <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/faq.astro:3y7147">
+            Un soin complet de pédicurie médicale dure en moyenne 45 minutes. Un bilan podologique et postural approfondi requiert entre 45 et 60 minutes selon la complexité de l'examen clinique.
+          </p>
+        </div>
+
+        <!-- Q4 -->
+        <div class="p-6 bg-background border border-border rounded-xs space-y-2" data-ps="src/pages/faq.astro:2mg1wf">
+          <h2 class="font-serif text-lg font-bold text-foreground m-0" data-ps="src/pages/faq.astro:63z1um">
+            Quel est le délai de fabrication des semelles ?
+          </h2>
+          <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/faq.astro:3y7148">
+            Les semelles orthopédiques sont entièrement confectionnées sur place par Camille Durand. Le délai moyen est d'une semaine entre le bilan initial et la séance d'essayage. Un contrôle gratuit d'adaptation est systématiquement réalisé à 4-6 semaines.
+          </p>
+        </div>
+
+        <!-- Q5 -->
+        <div class="p-6 bg-background border border-border rounded-xs space-y-2" data-ps="src/pages/faq.astro:2mg1we">
+          <h2 class="font-serif text-lg font-bold text-foreground m-0" data-ps="src/pages/faq.astro:63z1un">
+            Comment prendre rendez-vous pour un soin à domicile ?
+          </h2>
+          <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/faq.astro:3y7149">
+            Les soins à domicile étant réservés aux personnes dans l'incapacité de se déplacer à Toulon, la planification s'effectue exclusivement par téléphone au <span class="font-mono text-foreground font-medium" data-ps="src/pages/faq.astro:bw9wbd">{SITE.phone}</span> afin d'évaluer les créneaux d'intervention.
+          </p>
+        </div>
+
+        <!-- Q6 -->
+        <div class="p-6 bg-background border border-border rounded-xs space-y-2" data-ps="src/pages/faq.astro:2mg1wd">
+          <h2 class="font-serif text-lg font-bold text-foreground m-0" data-ps="src/pages/faq.astro:63z1uo">
+            Le cabinet est-il adapté aux personnes à mobilité réduite ?
+          </h2>
+          <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/faq.astro:3y714a">
+            Oui. Le cabinet est situé au rez-de-chaussée, dispose d'un accès de plain-pied sans marche et est parfaitement conforme aux normes PMR (portes élargies, dégagements, sanitaires adaptés).
+          </p>
+        </div>
+
+      </div>
+
+      <div class="max-w-3xl mx-auto mt-12 p-6 bg-background border border-border rounded-xs text-center space-y-3" data-ps="src/pages/faq.astro:2mg1wc">
+        <h2 class="font-serif text-base font-bold text-foreground m-0" data-ps="src/pages/faq.astro:63z1up">Une autre question ?</h2>
+        <p class="text-xs text-muted-foreground m-0" data-ps="src/pages/faq.astro:3y714b">
+          Vous pouvez joindre le cabinet par téléphone au <span class="font-mono text-foreground font-semibold" data-ps="src/pages/faq.astro:bw9war">{SITE.phone}</span> pendant les heures d'ouverture.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

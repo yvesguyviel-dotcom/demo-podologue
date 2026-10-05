@@ -1,0 +1,144 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+---
+
+<BaseLayout
+  title="Accès & Contact | Camille Durand — Pédicure-Podologue à Toulon"
+  description="Adresse du cabinet au 14 Boulevard de Strasbourg à Toulon, plan d'accès, transports en commun, stationnement et prise de rendez-vous."
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Accès et coordonnées du cabinet',
+    description: 'Localisation, transports et coordonnées du cabinet de pédicurie-podologie de Camille Durand.',
+    url: new URL(Astro.url.pathname, SITE.url).toString(),
+  }}
+>
+  <section class="py-12 md:py-20 bg-background border-b border-border" data-ps="src/pages/contact.astro:76y6n2">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/pages/contact.astro:uoopdk">
+      <div class="max-w-3xl space-y-4" data-ps="src/pages/contact.astro:uoope6">
+        <h1 class="font-serif text-h1 font-bold text-foreground m-0" data-ps="src/pages/contact.astro:xwwezw">
+          Accès, coordonnées & rendez-vous
+        </h1>
+        <p class="text-lg md:text-xl text-muted-foreground leading-relaxed m-0" data-ps="src/pages/contact.astro:wmga2a">
+          Le cabinet vous accueille du lundi au samedi matin au centre-ville de Toulon.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-surface border-b border-border" data-ps="src/pages/contact.astro:76y6n3">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/pages/contact.astro:uoope7">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start" data-ps="src/pages/contact.astro:uoope8">
+        
+        <!-- Coordonnées et Prise de RDV (6 cols) -->
+        <div class="lg:col-span-6 space-y-6" data-ps="src/pages/contact.astro:uoope9">
+          <div class="p-6 md:p-8 bg-background border border-border rounded-xs space-y-4" data-ps="src/pages/contact.astro:uoopea">
+            <h2 class="font-serif text-h2 font-bold text-foreground m-0" data-ps="src/pages/contact.astro:j8hhs9">
+              Cabinet de Pédicurie-Podologie
+            </h2>
+            
+            <address class="not-italic text-sm text-muted-foreground space-y-2 leading-relaxed">
+              <p class="text-base font-semibold text-foreground m-0" data-ps="src/pages/contact.astro:wmga29">Camille Durand (EI)</p>
+              <p class="m-0" data-ps="src/pages/contact.astro:wmga28">{SITE.address.street}</p>
+              <p class="m-0" data-ps="src/pages/contact.astro:wmga27">{SITE.address.postalCode} {SITE.address.city}</p>
+              <p class="text-xs text-primary font-medium m-0 pt-1" data-ps="src/pages/contact.astro:wmga26">{SITE.address.access}</p>
+            </address>
+
+            <div class="pt-3 border-t border-border space-y-2" data-ps="src/pages/contact.astro:uoopeb">
+              <div class="flex items-center justify-between text-sm" data-ps="src/pages/contact.astro:uoopec">
+                <span class="text-muted-foreground" data-ps="src/pages/contact.astro:lvpf73">Téléphone :</span>
+                <span class="font-mono font-bold text-foreground" data-ps="src/pages/contact.astro:lvpf74">{SITE.phone}</span>
+              </div>
+              <div class="flex items-center justify-between text-sm" data-ps="src/pages/contact.astro:uooped">
+                <span class="text-muted-foreground" data-ps="src/pages/contact.astro:lvpf75">Conventionnement :</span>
+                <span class="text-foreground" data-ps="src/pages/contact.astro:lvpf76">Secteur 1</span>
+              </div>
+              <div class="flex items-center justify-between text-sm" data-ps="src/pages/contact.astro:uoopee">
+                <span class="text-muted-foreground" data-ps="src/pages/contact.astro:lvpf77">N° RPPS :</span>
+                <span class="font-mono text-foreground" data-ps="src/pages/contact.astro:lvpf7t">{SITE.rpps}</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-border" data-ps="src/pages/contact.astro:uoopef">
+              <a
+                href={SITE.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold rounded-xs bg-primary text-primary-foreground hover:bg-primary-hover transition-colors shadow-xs"
+               data-ps="src/pages/contact.astro:piide2">
+                Prendre rendez-vous en ligne
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Avertissement de messagerie électronique (Obligatoire) -->
+          <div class="p-5 bg-background border border-border rounded-xs space-y-2" data-ps="src/pages/contact.astro:lx8n1r">
+            <h2 class="font-serif text-sm font-bold text-foreground m-0" data-ps="src/pages/contact.astro:j8hhsa">
+              Note relative aux correspondances par courriel
+            </h2>
+            <p class="text-xs text-muted-foreground font-mono m-0" data-ps="src/pages/contact.astro:wmga25">
+              {SITE.email}
+            </p>
+            <p class="text-xs text-muted-foreground leading-relaxed m-0 pt-1" data-ps="src/pages/contact.astro:wmga24">
+              <strong>Avertissement :</strong> La messagerie utilisée n'est pas sécurisée. Pour toute demande relative à un dossier médical, merci de contacter directement le cabinet par téléphone ou lors de votre consultation. Aucun avis médical ni diagnostic n'est délivré par messagerie électronique.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accès et Horaires (6 cols) -->
+        <div class="lg:col-span-6 space-y-6" data-ps="src/pages/contact.astro:lx8n1q">
+          <div class="p-6 md:p-8 bg-background border border-border rounded-xs space-y-4" data-ps="src/pages/contact.astro:lx8n1p">
+            <h2 class="font-serif text-h2 font-bold text-foreground m-0" data-ps="src/pages/contact.astro:j8hhsb">
+              Plan d'accès & Stationnement
+            </h2>
+
+            <div class="space-y-3 text-sm text-muted-foreground" data-ps="src/pages/contact.astro:lx8n1o">
+              <div class="p-3 bg-surface border border-border rounded-xs" data-ps="src/pages/contact.astro:lx8n1n">
+                <span class="block text-xs font-semibold text-foreground uppercase tracking-wider mb-1" data-ps="src/pages/contact.astro:lvpf7u">En bus (Réseau Mistral)</span>
+                <p class="text-xs m-0" data-ps="src/pages/contact.astro:wmga23">{SITE.address.transit}</p>
+              </div>
+
+              <div class="p-3 bg-surface border border-border rounded-xs" data-ps="src/pages/contact.astro:lx8n1m">
+                <span class="block text-xs font-semibold text-foreground uppercase tracking-wider mb-1" data-ps="src/pages/contact.astro:lvpf7v">En voiture & Parkings</span>
+                <p class="text-xs m-0" data-ps="src/pages/contact.astro:wmga22">{SITE.address.parking}</p>
+              </div>
+
+              <div class="p-3 bg-surface border border-border rounded-xs" data-ps="src/pages/contact.astro:lx8n1l">
+                <span class="block text-xs font-semibold text-foreground uppercase tracking-wider mb-1" data-ps="src/pages/contact.astro:lvpf7w">En train (Gare SNCF)</span>
+                <p class="text-xs m-0" data-ps="src/pages/contact.astro:wmga21">Gare de Toulon située à environ 8 minutes à pied du cabinet.</p>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-border" data-ps="src/pages/contact.astro:lx8n1k">
+              <h3 class="font-serif text-sm font-bold text-foreground m-0 mb-2" data-ps="src/pages/contact.astro:4k2kko">Horaires de consultation</h3>
+              <ul class="list-none p-0 m-0 text-xs text-muted-foreground space-y-1.5 font-mono">
+                <li class="flex justify-between" data-ps="src/pages/contact.astro:jzge8b"><span data-ps="src/pages/contact.astro:lvpf7x">Lundi au Vendredi :</span> <span class="text-foreground" data-ps="src/pages/contact.astro:lvpf7y">8h30 – 19h00</span></li>
+                <li class="flex justify-between" data-ps="src/pages/contact.astro:jzge8c"><span data-ps="src/pages/contact.astro:lvpf7z">Samedi matin :</span> <span class="text-foreground" data-ps="src/pages/contact.astro:lvpf80">8h30 – 12h30</span></li>
+                <li class="flex justify-between" data-ps="src/pages/contact.astro:jzge8d"><span data-ps="src/pages/contact.astro:lvpf81">Dimanche & Fériés :</span> <span data-ps="src/pages/contact.astro:lvpf82">Fermé</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Photo de l'entrée du cabinet -->
+          <div class="border border-border bg-background p-2 rounded-xs" data-ps="src/pages/contact.astro:lx8n1j">
+            <div class="aspect-[16/9] overflow-hidden rounded-xs" data-ps="src/pages/contact.astro:lx8n1i">
+              <img
+                src="https://images.pexels.com/photos/6812463/pexels-photo-6812463.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                srcset="https://images.pexels.com/photos/6812463/pexels-photo-6812463.jpeg?auto=compress&cs=tinysrgb&w=320 320w, https://images.pexels.com/photos/6812463/pexels-photo-6812463.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/6812463/pexels-photo-6812463.jpeg?auto=compress&cs=tinysrgb&w=640 640w, https://images.pexels.com/photos/6812463/pexels-photo-6812463.jpeg?auto=compress&cs=tinysrgb&w=768 768w, https://images.pexels.com/photos/6812463/pexels-photo-6812463.jpeg?auto=compress&cs=tinysrgb&w=1024 1024w"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                alt="Intérieur sobre et ordonné du cabinet de consultation de podologie à Toulon"
+                loading="lazy"
+                width="1200"
+                height="675"
+                class="w-full h-full object-cover object-center" data-ps="src/pages/contact.astro:s6fl21" />
+            </div>
+            <p class="text-xs text-muted-foreground p-2 m-0 text-center" data-ps="src/pages/contact.astro:wmga1f">Consultations sur rendez-vous</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>

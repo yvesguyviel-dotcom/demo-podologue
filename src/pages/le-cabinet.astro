@@ -1,0 +1,161 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+---
+
+<BaseLayout
+  title="Le cabinet & Hygiène | Camille Durand — Pédicure-Podologue à Toulon"
+  description="Présentation des installations du cabinet à Toulon : accessibilité PMR, chaîne d'asepsie, autoclave classe B et plateau technique de podologie."
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    name: 'Le cabinet et les protocoles d’hygiène',
+    description: 'Normes d’hygiène, de stérilisation et d’accessibilité du cabinet de Camille Durand à Toulon.',
+    url: new URL(Astro.url.pathname, SITE.url).toString(),
+  }}
+>
+  <!-- En-tête -->
+  <section class="py-12 md:py-20 bg-background border-b border-border" data-ps="src/pages/le-cabinet.astro:248hqs">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/pages/le-cabinet.astro:mx7wjc">
+      <div class="max-w-3xl space-y-4" data-ps="src/pages/le-cabinet.astro:mx7wiq">
+        <h1 class="font-serif text-h1 font-bold text-foreground m-0" data-ps="src/pages/le-cabinet.astro:4csb9i">
+          Le cabinet et les normes d'hygiène
+        </h1>
+        <p class="text-lg md:text-xl text-muted-foreground leading-relaxed m-0" data-ps="src/pages/le-cabinet.astro:gexyi1">
+          Un espace de consultation moderne, accessible et entièrement équipé pour assurer sécurité, rigueur aseptique et confort aux patients.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installations et Accessibilité -->
+  <section class="py-16 bg-surface border-b border-border" data-ps="src/pages/le-cabinet.astro:248hqr">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/pages/le-cabinet.astro:mx7wip">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-ps="src/pages/le-cabinet.astro:mx7wio">
+        
+        <div class="lg:col-span-6 space-y-4" data-ps="src/pages/le-cabinet.astro:mx7win">
+          <h2 class="font-serif text-h2 font-bold text-foreground m-0" data-ps="src/pages/le-cabinet.astro:j178h5">
+            Accessibilité et aménagement
+          </h2>
+          <p class="text-sm md:text-base text-muted-foreground leading-relaxed m-0" data-ps="src/pages/le-cabinet.astro:gexyin">
+            Situé au cœur de Toulon, le cabinet a été pensé pour accueillir tous les publics dans des conditions optimales :
+          </p>
+          <ul class="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
+            <li data-ps="src/pages/le-cabinet.astro:ia8c11"><strong>Accès de plain-pied :</strong> Situé en rez-de-chaussée sans marche d'accès.</li>
+            <li data-ps="src/pages/le-cabinet.astro:ia8c10"><strong>Conformité PMR :</strong> Portes larges, couloirs dégagés et sanitaires adaptés aux personnes à mobilité réduite ou en fauteuil roulant.</li>
+            <li data-ps="src/pages/le-cabinet.astro:ia8c0z"><strong>Salle d'attente tempérée :</strong> Espace calme garantissant la discrétion et la ponctualité des consultations.</li>
+            <li data-ps="src/pages/le-cabinet.astro:ia8c0y"><strong>Fauteuil d'examen articulé :</strong> Réglages électriques pour une installation sans effort des personnes âgées ou souffrantes.</li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-6 border border-border bg-background p-2 rounded-xs" data-ps="src/pages/le-cabinet.astro:mx7wim">
+          <div class="aspect-[4/3] overflow-hidden rounded-xs" data-ps="src/pages/le-cabinet.astro:mx7wil">
+            <img
+              src="https://images.pexels.com/photos/5827294/pexels-photo-5827294.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              srcset="https://images.pexels.com/photos/5827294/pexels-photo-5827294.jpeg?auto=compress&cs=tinysrgb&w=320 320w, https://images.pexels.com/photos/5827294/pexels-photo-5827294.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/5827294/pexels-photo-5827294.jpeg?auto=compress&cs=tinysrgb&w=640 640w, https://images.pexels.com/photos/5827294/pexels-photo-5827294.jpeg?auto=compress&cs=tinysrgb&w=768 768w, https://images.pexels.com/photos/5827294/pexels-photo-5827294.jpeg?auto=compress&cs=tinysrgb&w=1024 1024w"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              alt="Espace d'attente et salle de soins moderne du cabinet de podologie"
+              loading="lazy"
+              width="1200"
+              height="800"
+              class="w-full h-full object-cover object-center" data-ps="src/pages/le-cabinet.astro:pfh0ux" />
+          </div>
+          <p class="text-xs text-muted-foreground p-2 m-0 text-center" data-ps="src/pages/le-cabinet.astro:gexyio">Cabinet paramédical situé 14 Boulevard de Strasbourg à Toulon</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Protocole d'hygiène et stérilisation -->
+  <section class="py-16 bg-background border-b border-border" data-ps="src/pages/le-cabinet.astro:248hqq">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 space-y-8" data-ps="src/pages/le-cabinet.astro:mx7wik">
+      <div class="max-w-3xl" data-ps="src/pages/le-cabinet.astro:mx7wij">
+        <h2 class="font-serif text-h2 font-bold text-foreground m-0 mb-3" data-ps="src/pages/le-cabinet.astro:j178h4">
+          Protocole strict de stérilisation et d'asepsie
+        </h2>
+        <p class="text-base text-muted-foreground leading-relaxed m-0" data-ps="src/pages/le-cabinet.astro:gexyip">
+          La prévention des risques infectieux repose sur une chaîne d'hygiène rigoureuse et validée par les autorités sanitaires.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4" data-ps="src/pages/le-cabinet.astro:mx7wii">
+        
+        <div class="p-5 bg-surface border border-border rounded-xs space-y-2" data-ps="src/pages/le-cabinet.astro:mx7wih">
+          <span class="text-xs font-mono font-semibold text-primary" data-ps="src/pages/le-cabinet.astro:1iw8cf">Étape 01</span>
+          <h3 class="font-serif text-base font-bold text-foreground m-0" data-ps="src/pages/le-cabinet.astro:xpm5ph">Décontamination</h3>
+          <p class="text-xs text-muted-foreground leading-relaxed m-0" data-ps="src/pages/le-cabinet.astro:gexyiq">
+            Immersion immédiate des instruments réutilisables dans une solution désinfectante aux normes NF EN.
+          </p>
+        </div>
+
+        <div class="p-5 bg-surface border border-border rounded-xs space-y-2" data-ps="src/pages/le-cabinet.astro:qmbi7">
+          <span class="text-xs font-mono font-semibold text-primary" data-ps="src/pages/le-cabinet.astro:1iw8cg">Étape 02</span>
+          <h3 class="font-serif text-base font-bold text-foreground m-0" data-ps="src/pages/le-cabinet.astro:xpm5pg">Nettoyage ultrasons</h3>
+          <p class="text-xs text-muted-foreground leading-relaxed m-0" data-ps="src/pages/le-cabinet.astro:gexyir">
+            Bain à ultrasons pour éliminer les micro-résidus, suivi d'un rinçage abondant et d'un séchage complet.
+          </p>
+        </div>
+
+        <div class="p-5 bg-surface border border-border rounded-xs space-y-2" data-ps="src/pages/le-cabinet.astro:qmbi6">
+          <span class="text-xs font-mono font-semibold text-primary" data-ps="src/pages/le-cabinet.astro:1iw8ch">Étape 03</span>
+          <h3 class="font-serif text-base font-bold text-foreground m-0" data-ps="src/pages/le-cabinet.astro:xpm5pf">Mise sous sachet</h3>
+          <p class="text-xs text-muted-foreground leading-relaxed m-0" data-ps="src/pages/le-cabinet.astro:gexyis">
+            Conditionnement individuel sous gaine thermosoudée avec témoin de virage thermique.
+          </p>
+        </div>
+
+        <div class="p-5 bg-surface border border-border rounded-xs space-y-2" data-ps="src/pages/le-cabinet.astro:qmbi5">
+          <span class="text-xs font-mono font-semibold text-primary" data-ps="src/pages/le-cabinet.astro:1iw8ci">Étape 04</span>
+          <h3 class="font-serif text-base font-bold text-foreground m-0" data-ps="src/pages/le-cabinet.astro:xpm5pe">Autoclave classe B</h3>
+          <p class="text-xs text-muted-foreground leading-relaxed m-0" data-ps="src/pages/le-cabinet.astro:gexyit">
+            Stérilisation à la vapeur d'eau sous pression à 134°C avec traçabilité informatique du cycle.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="p-4 bg-surface border border-border rounded-xs text-xs text-muted-foreground space-y-1" data-ps="src/pages/le-cabinet.astro:qmbi4">
+        <p class="font-semibold text-foreground m-0" data-ps="src/pages/le-cabinet.astro:gexyiu">Consommables à usage unique :</p>
+        <p class="m-0" data-ps="src/pages/le-cabinet.astro:gexyiv">
+          Les lames de bistouris, gouges, champs d'examen, gants et doigtiers sont strictement à usage unique et éliminés dans des conteneurs DASRI (Déchets d'Activités de Soins à Risques Infectieux) collectés par un organisme agréé.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plateau technique podologique -->
+  <section class="py-16 bg-surface" data-ps="src/pages/le-cabinet.astro:248hqp">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 space-y-8" data-ps="src/pages/le-cabinet.astro:qmbi3">
+      <div class="max-w-3xl" data-ps="src/pages/le-cabinet.astro:qmbi2">
+        <h2 class="font-serif text-h2 font-bold text-foreground m-0 mb-3" data-ps="src/pages/le-cabinet.astro:j178h3">
+          Équipements et plateau technique
+        </h2>
+        <p class="text-base text-muted-foreground leading-relaxed m-0" data-ps="src/pages/le-cabinet.astro:gexyiw">
+          Des dispositifs médicaux précis pour le diagnostic postural et l'usinage des semelles.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-ps="src/pages/le-cabinet.astro:qmbi1">
+        <div class="p-6 bg-background border border-border rounded-xs space-y-2" data-ps="src/pages/le-cabinet.astro:qmbi0">
+          <h3 class="font-serif text-base font-bold text-foreground m-0" data-ps="src/pages/le-cabinet.astro:xpm5pd">Podoscope & Analyse statique</h3>
+          <p class="text-xs text-muted-foreground leading-relaxed m-0" data-ps="src/pages/le-cabinet.astro:gexyji">
+            Miroir éclairé permettant la visualisation directe des empreintes plantaires et des points de surpression en charge.
+          </p>
+        </div>
+        <div class="p-6 bg-background border border-border rounded-xs space-y-2" data-ps="src/pages/le-cabinet.astro:qmbhz">
+          <h3 class="font-serif text-base font-bold text-foreground m-0" data-ps="src/pages/le-cabinet.astro:xpm5pc">Plateforme baropodométrique</h3>
+          <p class="text-xs text-muted-foreground leading-relaxed m-0" data-ps="src/pages/le-cabinet.astro:gexyjj">
+            Capteurs de pression électroniques enregistrant la répartition dynamique du poids du corps durant les phases du pas.
+          </p>
+        </div>
+        <div class="p-6 bg-background border border-border rounded-xs space-y-2" data-ps="src/pages/le-cabinet.astro:qmbhy">
+          <h3 class="font-serif text-base font-bold text-foreground m-0" data-ps="src/pages/le-cabinet.astro:xpm5pb">Atelier de façonnage</h3>
+          <p class="text-xs text-muted-foreground leading-relaxed m-0" data-ps="src/pages/le-cabinet.astro:gexyjk">
+            Banc de ponçage avec aspiration intégrée et module de thermoformage pour l'adaptation sur mesure des matériaux orthétiques.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,88 @@
+---
+import { SITE } from '@/config/site';
+---
+
+<section class="py-16 md:py-24 bg-surface" data-ps="src/components/home/AccessHours.astro:6hh4fd">
+  <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/components/home/AccessHours.astro:8g2cls">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch" data-ps="src/components/home/AccessHours.astro:8g2clr">
+      
+      <!-- Colonne 1 : Horaires et RDV (5 cols) -->
+      <div class="lg:col-span-5 p-6 md:p-8 bg-background border border-border rounded-xs flex flex-col justify-between space-y-6" data-ps="src/components/home/AccessHours.astro:8g2clq">
+        <div data-ps="src/components/home/AccessHours.astro:8g2clp">
+          <h2 class="font-serif text-h2 font-bold text-foreground m-0 mb-4" data-ps="src/components/home/AccessHours.astro:nk0g1x">
+            Horaires d'ouverture
+          </h2>
+          <p class="text-sm text-muted-foreground mb-6" data-ps="src/components/home/AccessHours.astro:hbhir3">
+            Les consultations ont lieu exclusivement sur rendez-vous au cabinet ou à domicile.
+          </p>
+
+          <dl class="space-y-3 text-sm divide-y divide-border">
+            <div class="flex justify-between py-2" data-ps="src/components/home/AccessHours.astro:8g2clo">
+              <dt class="font-medium text-foreground">Lundi au Vendredi</dt>
+              <dd class="text-muted-foreground font-mono">8h30 – 19h00</dd>
+            </div>
+            <div class="flex justify-between py-2" data-ps="src/components/home/AccessHours.astro:8g2cln">
+              <dt class="font-medium text-foreground">Samedi</dt>
+              <dd class="text-muted-foreground font-mono">8h30 – 12h30</dd>
+            </div>
+            <div class="flex justify-between py-2" data-ps="src/components/home/AccessHours.astro:8g2clm">
+              <dt class="font-medium text-foreground">Dimanche & Fériés</dt>
+              <dd class="text-muted-foreground">Fermé</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="pt-4 border-t border-border" data-ps="src/components/home/AccessHours.astro:u259da">
+          <a
+            href={SITE.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-xs bg-primary text-primary-foreground hover:bg-primary-hover transition-colors shadow-xs"
+           data-ps="src/components/home/AccessHours.astro:a7jm22">
+            Prendre rendez-vous en ligne
+          </a>
+        </div>
+      </div>
+
+      <!-- Colonne 2 : Accès, Transports & Téléphone (7 cols) -->
+      <div class="lg:col-span-7 p-6 md:p-8 bg-background border border-border rounded-xs flex flex-col justify-between space-y-6" data-ps="src/components/home/AccessHours.astro:u259d9">
+        <div data-ps="src/components/home/AccessHours.astro:u259d8">
+          <h2 class="font-serif text-h2 font-bold text-foreground m-0 mb-4" data-ps="src/components/home/AccessHours.astro:nk0g1y">
+            Venir au cabinet à Toulon
+          </h2>
+          <div class="space-y-4 text-sm text-muted-foreground" data-ps="src/components/home/AccessHours.astro:u259d7">
+            <div class="p-4 bg-surface border border-border rounded-xs" data-ps="src/components/home/AccessHours.astro:u259d6">
+              <p class="font-semibold text-foreground m-0 mb-1" data-ps="src/components/home/AccessHours.astro:hbhir2">{SITE.address.street}</p>
+              <p class="m-0" data-ps="src/components/home/AccessHours.astro:hbhir1">{SITE.address.postalCode} {SITE.address.city} — {SITE.address.access}</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" data-ps="src/components/home/AccessHours.astro:u259d5">
+              <div class="p-3 bg-surface border border-border rounded-xs" data-ps="src/components/home/AccessHours.astro:u259d4">
+                <span class="block text-xs font-semibold text-foreground uppercase tracking-wider mb-1" data-ps="src/components/home/AccessHours.astro:8lxyk0">Transports en commun</span>
+                <span class="text-xs" data-ps="src/components/home/AccessHours.astro:8lxyje">{SITE.address.transit}</span>
+              </div>
+              <div class="p-3 bg-surface border border-border rounded-xs" data-ps="src/components/home/AccessHours.astro:u259d3">
+                <span class="block text-xs font-semibold text-foreground uppercase tracking-wider mb-1" data-ps="src/components/home/AccessHours.astro:8lxyjd">Stationnement</span>
+                <span class="text-xs" data-ps="src/components/home/AccessHours.astro:8lxyjc">{SITE.address.parking}</span>
+              </div>
+            </div>
+
+            <div class="p-3 bg-surface border border-border rounded-xs" data-ps="src/components/home/AccessHours.astro:u259d2">
+              <span class="block text-xs font-semibold text-foreground uppercase tracking-wider mb-1" data-ps="src/components/home/AccessHours.astro:8lxyjb">Téléphone du cabinet</span>
+              <p class="text-base font-mono font-medium text-foreground m-0" data-ps="src/components/home/AccessHours.astro:hbhir0">{SITE.phone}</p>
+              <p class="text-xs text-muted-foreground m-0 pt-1" data-ps="src/components/home/AccessHours.astro:hbhiqz">Accueil téléphonique pour renseignements ou rendez-vous à domicile.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between pt-4 border-t border-border text-xs text-muted-foreground" data-ps="src/components/home/AccessHours.astro:u259d1">
+          <span data-ps="src/components/home/AccessHours.astro:8lxyja">Règlement : Carte bancaire, chèque ou espèces</span>
+          <a href="/honoraires" class="font-semibold text-primary hover:text-primary-hover no-underline" data-ps="src/components/home/AccessHours.astro:a7jm21">
+            Voir la grille des tarifs →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,90 @@
+---
+import { SITE } from '@/config/site';
+---
+
+<section class="relative bg-background border-b border-border py-12 md:py-20" data-ps="src/components/home/Hero.astro:ah8lbi">
+  <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/components/home/Hero.astro:iy4taf">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center" data-ps="src/components/home/Hero.astro:iy4tag">
+      
+      <!-- Colonne Texte & Identité Déontologique (7/12) -->
+      <div class="lg:col-span-7 space-y-6" data-ps="src/components/home/Hero.astro:iy4tah">
+        <h1 class="font-serif text-h1 font-bold text-foreground tracking-tight m-0 leading-tight" data-ps="src/components/home/Hero.astro:307k1o">
+          Camille Durand, pédicure-podologue à Toulon
+        </h1>
+
+        <p class="text-lg md:text-xl text-muted-foreground font-normal leading-relaxed m-0" data-ps="src/components/home/Hero.astro:6uykn3">
+          Cabinet de pédicurie-podologie pour la prise en charge des affections épidermiques et unguéales, l'examen podologique de la posture et de la marche, et la confection d'orthèses plantaires sur mesure.
+        </p>
+
+        <!-- Grille des repères administratifs et réglementaires -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 py-2 border-y border-border" data-ps="src/components/home/Hero.astro:ecxgf3">
+          <div class="p-3 bg-surface rounded-xs border border-border" data-ps="src/components/home/Hero.astro:ecxgf4">
+            <span class="block text-xs uppercase tracking-wider text-muted-foreground font-semibold" data-ps="src/components/home/Hero.astro:z1i1y5">Titre & Formation</span>
+            <span class="text-sm font-medium text-foreground" data-ps="src/components/home/Hero.astro:z1i1xj">Diplôme d'État de Pédicure-Podologue</span>
+            <span class="block text-xs text-muted-foreground" data-ps="src/components/home/Hero.astro:z1i1xi">IFPP de Marseille</span>
+          </div>
+          <div class="p-3 bg-surface rounded-xs border border-border" data-ps="src/components/home/Hero.astro:ecxgf5">
+            <span class="block text-xs uppercase tracking-wider text-muted-foreground font-semibold" data-ps="src/components/home/Hero.astro:z1i1xh">Statut réglementaire</span>
+            <span class="text-sm font-medium text-foreground" data-ps="src/components/home/Hero.astro:z1i1xg">Conventionné Secteur 1</span>
+            <span class="block text-xs text-muted-foreground font-mono" data-ps="src/components/home/Hero.astro:z1i1xf">N° RPPS : {SITE.rpps}</span>
+          </div>
+          <div class="p-3 bg-surface rounded-xs border border-border" data-ps="src/components/home/Hero.astro:ecxgf6">
+            <span class="block text-xs uppercase tracking-wider text-muted-foreground font-semibold" data-ps="src/components/home/Hero.astro:z1i1xe">Localisation</span>
+            <span class="text-sm font-medium text-foreground" data-ps="src/components/home/Hero.astro:z1i1xd">{SITE.address.street}</span>
+            <span class="block text-xs text-muted-foreground" data-ps="src/components/home/Hero.astro:z1i1xc">{SITE.address.postalCode} {SITE.address.city} (Var)</span>
+          </div>
+          <div class="p-3 bg-surface rounded-xs border border-border" data-ps="src/components/home/Hero.astro:ecxgf7">
+            <span class="block text-xs uppercase tracking-wider text-muted-foreground font-semibold" data-ps="src/components/home/Hero.astro:z1i1xb">Accessibilité</span>
+            <span class="text-sm font-medium text-foreground" data-ps="src/components/home/Hero.astro:z1i1xa">Rez-de-chaussée</span>
+            <span class="block text-xs text-muted-foreground" data-ps="src/components/home/Hero.astro:z1i1wo">Conforme normes PMR</span>
+          </div>
+        </div>
+
+        <!-- Actions de contact et prise de rendez-vous -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2" data-ps="src/components/home/Hero.astro:ecxgf8">
+          <a
+            href={SITE.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold rounded-xs bg-primary text-primary-foreground hover:bg-primary-hover transition-colors shadow-xs"
+           data-ps="src/components/home/Hero.astro:8zc15">
+            Prendre rendez-vous
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+
+          <a
+            href="/soins"
+            class="inline-flex items-center justify-center px-5 py-3.5 text-base font-medium rounded-xs bg-surface text-foreground hover:bg-secondary border border-border transition-colors no-underline"
+           data-ps="src/components/home/Hero.astro:8zc16">
+            Consulter les actes dispensés
+          </a>
+        </div>
+      </div>
+
+      <!-- Colonne Photographie Clinique Enceinte (5/12) -->
+      <div class="lg:col-span-5" data-ps="src/components/home/Hero.astro:ecxgf9">
+        <div class="relative border border-border bg-surface p-2 rounded-xs shadow-xs" data-ps="src/components/home/Hero.astro:ecxgfa">
+          <div class="relative aspect-[4/3] sm:aspect-[16/11] overflow-hidden rounded-xs bg-surface" data-ps="src/components/home/Hero.astro:ecxgfb">
+            <img
+              src="https://images.pexels.com/photos/7108351/pexels-photo-7108351.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              srcset="https://images.pexels.com/photos/7108351/pexels-photo-7108351.jpeg?auto=compress&cs=tinysrgb&w=320 320w, https://images.pexels.com/photos/7108351/pexels-photo-7108351.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/7108351/pexels-photo-7108351.jpeg?auto=compress&cs=tinysrgb&w=640 640w, https://images.pexels.com/photos/7108351/pexels-photo-7108351.jpeg?auto=compress&cs=tinysrgb&w=768 768w, https://images.pexels.com/photos/7108351/pexels-photo-7108351.jpeg?auto=compress&cs=tinysrgb&w=1024 1024w, https://images.pexels.com/photos/7108351/pexels-photo-7108351.jpeg?auto=compress&cs=tinysrgb&w=1280 1280w"
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              alt="Espace de consultation et fauteuil d'examen du cabinet de pédicurie-podologie à Toulon"
+              loading="eager"
+              fetchpriority="high"
+              width="1200"
+              height="800"
+              class="w-full h-full object-cover object-center" data-ps="src/components/home/Hero.astro:gfvoyx" />
+          </div>
+          <div class="px-2 pt-2.5 pb-1 flex items-center justify-between text-xs text-muted-foreground border-t border-border mt-2" data-ps="src/components/home/Hero.astro:ecxgfc">
+            <span data-ps="src/components/home/Hero.astro:z1i1wn">Cabinet de consultation · Toulon</span>
+            <span data-ps="src/components/home/Hero.astro:z1i1wm">Hygiène & stérilisation certifiées</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

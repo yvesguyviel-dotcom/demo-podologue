@@ -1,0 +1,172 @@
+---
+import { SITE } from '@/config/site';
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.replace(/\/$/, '') || '/';
+
+const navItems = [
+  { label: 'Accueil', href: '/' },
+  { label: 'Soins', href: '/soins' },
+  { label: 'Le cabinet', href: '/le-cabinet' },
+  { label: 'Honoraires', href: '/honoraires' },
+  { label: 'FAQ', href: '/faq' },
+  { label: 'Contact & Accès', href: '/contact' },
+];
+
+function isActive(href: string) {
+  if (href === '/') {
+    return currentPath === '/' || currentPath === '';
+  }
+  return currentPath === href || currentPath.startsWith(href + '/');
+}
+---
+
+<header id="navbar" class="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border transition-colors" data-ps="src/components/Navigation.astro:dt8k84">
+  <nav class="max-w-screen-xl mx-auto px-4 md:px-8 py-3.5" aria-label="Navigation principale" data-ps="src/components/Navigation.astro:m59h3d">
+    <div class="flex items-center justify-between gap-4" data-ps="src/components/Navigation.astro:gqvsd9">
+      <!-- Practitioner Brand Lockup -->
+      <a href="/" class="flex flex-col no-underline text-foreground group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xs" data-ps="src/components/Navigation.astro:7vkjsa">
+        <span class="font-serif text-lg md:text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors" data-ps="src/components/Navigation.astro:i2om69">
+          Camille Durand
+        </span>
+        <span class="text-xs uppercase tracking-wider text-muted-foreground font-medium" data-ps="src/components/Navigation.astro:i2om6a">
+          Pédicure-podologue DE (EI) · Toulon
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <div class="hidden lg:flex items-center gap-6" data-ps="src/components/Navigation.astro:gqvsda">
+        <ul class="flex items-center gap-1 m-0 p-0 list-none">
+          {navItems.map((item, __psIdx) => {
+            const active = isActive(item.href);
+            return (
+              <li data-ps={`src/components/Navigation.astro:2wgnls-${__psIdx}`}>
+                <a
+                  href={item.href}
+                  class={`px-3 py-1.5 text-sm font-medium rounded-xs transition-colors no-underline ${
+                    active
+                      ? 'text-primary font-semibold bg-surface border-b-2 border-primary'
+                      : 'text-foreground hover:text-primary hover:bg-surface/50'
+                  }`}
+                  aria-current={active ? 'page' : undefined}
+                 data-ps={`src/components/Navigation.astro:7vkjsb-${__psIdx}`}>
+                  {item.label}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+
+        <!-- External Booking CTA -->
+        <a
+          href={SITE.bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-xs bg-primary text-primary-foreground hover:bg-primary-hover transition-colors shadow-xs"
+         data-ps="src/components/Navigation.astro:7vkjsc">
+          Prendre rendez-vous
+          <svg class="w-3.5 h-3.5 ml-1.5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="flex items-center gap-2 lg:hidden" data-ps="src/components/Navigation.astro:gqvsdb">
+        <a
+          href={SITE.bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-3 py-1.5 text-xs font-semibold rounded-xs bg-primary text-primary-foreground hover:bg-primary-hover transition-colors"
+         data-ps="src/components/Navigation.astro:7vkjsd">
+          Rendez-vous
+        </a>
+
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="p-2 text-foreground hover:text-primary hover:bg-surface rounded-xs transition-colors"
+          aria-label="Ouvrir le menu de navigation"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+         data-ps="src/components/Navigation.astro:4mva9">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Dropdown -->
+  <div
+    id="mobile-menu"
+    class="hidden lg:hidden bg-background border-t border-border shadow-md"
+    role="navigation"
+    aria-label="Navigation mobile"
+   data-ps="src/components/Navigation.astro:gqvsdc">
+    <div class="max-w-screen-xl mx-auto px-4 py-4 flex flex-col gap-2" data-ps="src/components/Navigation.astro:gqvsdd">
+      {navItems.map((item, __psIdx) => {
+        const active = isActive(item.href);
+        return (
+          <a
+            href={item.href}
+            class={`px-3 py-2.5 text-base rounded-xs transition-colors no-underline ${
+              active
+                ? 'text-primary font-bold bg-surface border-l-4 border-primary pl-2'
+                : 'text-foreground hover:bg-surface hover:text-primary'
+            }`}
+            aria-current={active ? 'page' : undefined}
+           data-ps={`src/components/Navigation.astro:7vkjse-${__psIdx}`}>
+            {item.label}
+          </a>
+        );
+      })}
+      <div class="pt-3 border-t border-border mt-2" data-ps="src/components/Navigation.astro:gqvsde">
+        <a
+          href={SITE.bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full inline-flex items-center justify-center px-4 py-2.5 text-sm font-semibold rounded-xs bg-primary text-primary-foreground hover:bg-primary-hover transition-colors"
+         data-ps="src/components/Navigation.astro:7vkjsf">
+          Prendre rendez-vous en ligne
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIconOpen = document.getElementById('menu-icon-open');
+  const menuIconClose = document.getElementById('menu-icon-close');
+
+  function toggleMenu() {
+    const isOpen = !mobileMenu?.classList.contains('hidden');
+    if (isOpen) {
+      mobileMenu?.classList.add('hidden');
+      menuIconOpen?.classList.remove('hidden');
+      menuIconClose?.classList.add('hidden');
+      mobileMenuButton?.setAttribute('aria-expanded', 'false');
+    } else {
+      mobileMenu?.classList.remove('hidden');
+      menuIconOpen?.classList.add('hidden');
+      menuIconClose?.classList.remove('hidden');
+      mobileMenuButton?.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  mobileMenuButton?.addEventListener('click', toggleMenu);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !mobileMenu?.classList.contains('hidden')) {
+      toggleMenu();
+    }
+  });
+</script>

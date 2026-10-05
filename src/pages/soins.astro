@@ -1,0 +1,189 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+---
+
+<BaseLayout
+  title="Les soins dispensés | Camille Durand — Pédicure-Podologue à Toulon"
+  description="Détail des soins de pédicurie médicale, bilans podologiques et posturaux, semelles orthopédiques sur mesure et soins à domicile à Toulon."
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    name: 'Soins et consultations de pédicurie-podologie',
+    description: 'Informations détaillées sur les 4 modalités de soins dispensées par Camille Durand à Toulon.',
+    url: new URL(Astro.url.pathname, SITE.url).toString(),
+  }}
+>
+  <section class="py-12 md:py-20 bg-background border-b border-border" data-ps="src/pages/soins.astro:a8oysz">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/pages/soins.astro:exvioq">
+      <div class="max-w-3xl space-y-4" data-ps="src/pages/soins.astro:exviop">
+        <h1 class="font-serif text-h1 font-bold text-foreground m-0" data-ps="src/pages/soins.astro:encz9e">
+          Les actes et modalités de soins
+        </h1>
+        <p class="text-lg md:text-xl text-muted-foreground leading-relaxed m-0" data-ps="src/pages/soins.astro:lk1gxm">
+          Prise en charge personnalisée des affections du pied, de la posture et de la locomotion au cabinet de Toulon ou à domicile.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pôle 1 : Pédicurie -->
+  <section id="pedicurie" class="py-16 bg-surface border-b border-border" data-ps="src/pages/soins.astro:a8oytl">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/pages/soins.astro:exvioo">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start" data-ps="src/pages/soins.astro:exvion">
+        <div class="lg:col-span-4 space-y-3" data-ps="src/pages/soins.astro:exviom">
+          <span class="text-xs uppercase tracking-wider font-semibold text-primary" data-ps="src/pages/soins.astro:oc43m">Modalité 01</span>
+          <h2 class="font-serif text-h2 font-bold text-foreground m-0" data-ps="src/pages/soins.astro:11xyb">
+            Soins de pédicurie médicale
+          </h2>
+          <p class="text-sm text-muted-foreground font-mono" data-ps="src/pages/soins.astro:lk1gxl">
+            Durée : 45 minutes environ · Tarif : 38 €
+          </p>
+        </div>
+        <div class="lg:col-span-8 p-6 md:p-8 bg-background border border-border rounded-xs space-y-4" data-ps="src/pages/soins.astro:exvio0">
+          <h3 class="font-serif text-base font-bold text-foreground m-0" data-ps="src/pages/soins.astro:epgv6k">
+            Champ d'intervention cutané et unguéal
+          </h3>
+          <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/soins.astro:lk1gxk">
+            Le soin de pédicurie médicale consiste en un examen attentif et un traitement mécanique des affections de la peau et des ongles du pied :
+          </p>
+          <ul class="list-disc pl-5 space-y-1.5 text-sm text-muted-foreground">
+            <li data-ps="src/pages/soins.astro:pwygy">Élimination des hyperkératoses, durillons, cors et œils-de-perdrix.</li>
+            <li data-ps="src/pages/soins.astro:pwygz">Traitement et désépaississement des ongles mycosés ou dystrophiques.</li>
+            <li data-ps="src/pages/soins.astro:pwyh0">Prise en charge des ongles incarnés et dégagement des sillons.</li>
+            <li data-ps="src/pages/soins.astro:pwyh1">Soins d'hygiène préventive et hydratation spécifique.</li>
+          </ul>
+          <div class="p-4 bg-surface border border-border rounded-xs text-xs text-muted-foreground" data-ps="src/pages/soins.astro:exvinz">
+            <span class="font-semibold text-foreground block mb-1" data-ps="src/pages/soins.astro:oc43n">Patients diabétiques :</span>
+            Évaluation du risque podologique et prise en charge des pieds à risque selon les grades définis par la Haute Autorité de Santé (HAS).
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pôle 2 : Bilan podologique -->
+  <section id="bilan" class="py-16 bg-background border-b border-border" data-ps="src/pages/soins.astro:a8oytm">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/pages/soins.astro:exviny">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start" data-ps="src/pages/soins.astro:exvinx">
+        <div class="lg:col-span-4 space-y-3" data-ps="src/pages/soins.astro:exvinw">
+          <span class="text-xs uppercase tracking-wider font-semibold text-primary" data-ps="src/pages/soins.astro:oc43o">Modalité 02</span>
+          <h2 class="font-serif text-h2 font-bold text-foreground m-0" data-ps="src/pages/soins.astro:11xya">
+            Bilan podologique & postural
+          </h2>
+          <p class="text-sm text-muted-foreground font-mono" data-ps="src/pages/soins.astro:lk1gxj">
+            Durée : 45 à 60 minutes · Tarif : 45 €
+          </p>
+        </div>
+        <div class="lg:col-span-8 p-6 md:p-8 bg-surface border border-border rounded-xs space-y-4" data-ps="src/pages/soins.astro:exvinv">
+          <h3 class="font-serif text-base font-bold text-foreground m-0" data-ps="src/pages/soins.astro:epgv5y">
+            Examen clinique de la marche et de la posture
+          </h3>
+          <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/soins.astro:lk1gxi">
+            Le bilan podologique est un examen complet destiné à analyser les dysfonctionnements mécaniques du membre inférieur et du rachis :
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2" data-ps="src/pages/soins.astro:exvinu">
+            <div class="p-3 bg-background border border-border rounded-xs" data-ps="src/pages/soins.astro:exvint">
+              <span class="block text-xs font-semibold text-foreground uppercase mb-1" data-ps="src/pages/soins.astro:oc43p">1. En décharge</span>
+              <p class="text-xs text-muted-foreground m-0" data-ps="src/pages/soins.astro:lk1gxh">Palpation, bilan articulaire et musculaire sur table d'examen.</p>
+            </div>
+            <div class="p-3 bg-background border border-border rounded-xs" data-ps="src/pages/soins.astro:exvins">
+              <span class="block text-xs font-semibold text-foreground uppercase mb-1" data-ps="src/pages/soins.astro:oc43q">2. En statique</span>
+              <p class="text-xs text-muted-foreground m-0" data-ps="src/pages/soins.astro:lk1gwv">Analyse des appuis sur podoscope et plateforme de pressions.</p>
+            </div>
+            <div class="p-3 bg-background border border-border rounded-xs" data-ps="src/pages/soins.astro:exvinr">
+              <span class="block text-xs font-semibold text-foreground uppercase mb-1" data-ps="src/pages/soins.astro:oc44c">3. En dynamique</span>
+              <p class="text-xs text-muted-foreground m-0" data-ps="src/pages/soins.astro:lk1gwu">Étude du déroulement du pas et de l'axe de locomotion.</p>
+            </div>
+          </div>
+          <p class="text-xs text-muted-foreground pt-1" data-ps="src/pages/soins.astro:lk1gwt">
+            <strong>Recommandation :</strong> Merci d'apporter vos chaussures de marche habituelles, chaussures de sport si concerné, ainsi que vos éventuels examens radiologiques récents.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pôle 3 : Semelles orthopédiques -->
+  <section id="semelles" class="py-16 bg-surface border-b border-border" data-ps="src/pages/soins.astro:a8oytn">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/pages/soins.astro:k51bkv">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start" data-ps="src/pages/soins.astro:k51bkw">
+        <div class="lg:col-span-4 space-y-3" data-ps="src/pages/soins.astro:k51bkx">
+          <span class="text-xs uppercase tracking-wider font-semibold text-primary" data-ps="src/pages/soins.astro:oc44d">Modalité 03</span>
+          <h2 class="font-serif text-h2 font-bold text-foreground m-0" data-ps="src/pages/soins.astro:11xy9">
+            Semelles orthopédiques (Orthèses plantaires)
+          </h2>
+          <p class="text-sm text-muted-foreground font-mono" data-ps="src/pages/soins.astro:lk1gws">
+            Bilan + Paire sur mesure : 130 € à 160 €
+          </p>
+        </div>
+        <div class="lg:col-span-8 p-6 md:p-8 bg-background border border-border rounded-xs space-y-4" data-ps="src/pages/soins.astro:k51bky">
+          <h3 class="font-serif text-base font-bold text-foreground m-0" data-ps="src/pages/soins.astro:epgv5x">
+            Conception et fabrication sur mesure
+          </h3>
+          <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/soins.astro:lk1gwr">
+            Toutes les semelles sont confectionnées directement au cabinet par Camille Durand, après validation du bilan podologique :
+          </p>
+          <ul class="list-disc pl-5 space-y-1.5 text-sm text-muted-foreground">
+            <li data-ps="src/pages/soins.astro:pwyh2"><strong>Semelles classiques / biomécaniques :</strong> Répartition des pressions et soutien des arches.</li>
+            <li data-ps="src/pages/soins.astro:pwyh3"><strong>Semelles thermoformées :</strong> Moulage direct respectant les reliefs anatomiques pour un maintien optimal.</li>
+            <li data-ps="src/pages/soins.astro:pwyhp"><strong>Semelles fines / posturales :</strong> Épaisseur réduite pour insertion discrète dans les chaussures de ville.</li>
+          </ul>
+          <p class="text-xs text-muted-foreground pt-2 border-t border-border" data-ps="src/pages/soins.astro:lk1gwq">
+            Une consultation de contrôle gratuite à 4-6 semaines est systématiquement proposée pour vérifier l'adaptation et ajuster les éléments si nécessaire.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pôle 4 : Soins à domicile -->
+  <section id="domicile" class="py-16 bg-background" data-ps="src/pages/soins.astro:a8oyto">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8" data-ps="src/pages/soins.astro:k51bkz">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start" data-ps="src/pages/soins.astro:k51bl0">
+        <div class="lg:col-span-4 space-y-3" data-ps="src/pages/soins.astro:k51bl1">
+          <span class="text-xs uppercase tracking-wider font-semibold text-primary" data-ps="src/pages/soins.astro:oc44e">Modalité 04</span>
+          <h2 class="font-serif text-h2 font-bold text-foreground m-0" data-ps="src/pages/soins.astro:11xy8">
+            Soins de pédicurie à domicile
+          </h2>
+          <p class="text-sm text-muted-foreground font-mono" data-ps="src/pages/soins.astro:lk1gwp">
+            Secteur Toulon intra-muros · Tarif : 45 €
+          </p>
+        </div>
+        <div class="lg:col-span-8 p-6 md:p-8 bg-surface border border-border rounded-xs space-y-4" data-ps="src/pages/soins.astro:k51bl2">
+          <h3 class="font-serif text-base font-bold text-foreground m-0" data-ps="src/pages/soins.astro:epgv5w">
+            Prise en charge des personnes à mobilité réduite
+          </h3>
+          <p class="text-sm text-muted-foreground leading-relaxed m-0" data-ps="src/pages/soins.astro:lk1gwo">
+            Pour les patients ne pouvant pas se déplacer en raison de leur état de santé, de leur grand âge ou d'une convalescence post-opératoire :
+          </p>
+          <ul class="list-disc pl-5 space-y-1.5 text-sm text-muted-foreground">
+            <li data-ps="src/pages/soins.astro:pwyhq">Déplacement avec matériel stérile portable complet.</li>
+            <li data-ps="src/pages/soins.astro:pwyhr">Soin équivalent à celui prodigué en cabinet.</li>
+            <li data-ps="src/pages/soins.astro:pwyhs">Rendez-vous fixé exclusivement par téléphone au <span class="font-mono text-foreground" data-ps="src/pages/soins.astro:oc44f">{SITE.phone}</span>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bandeau CTA -->
+  <section class="py-12 bg-surface border-t border-border text-center" data-ps="src/pages/soins.astro:a8oytp">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-8 space-y-4" data-ps="src/pages/soins.astro:k51bl3">
+      <h2 class="font-serif text-h2 font-bold text-foreground m-0" data-ps="src/pages/soins.astro:11xy7">Prendre rendez-vous au cabinet</h2>
+      <p class="text-sm text-muted-foreground max-w-xl mx-auto m-0" data-ps="src/pages/soins.astro:lk1gwn">
+        Sélectionnez votre motif de consultation en ligne ou contactez le cabinet par téléphone pour convenir d'une visite.
+      </p>
+      <div class="pt-2" data-ps="src/pages/soins.astro:k51bl4">
+        <a
+          href={SITE.bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-xs bg-primary text-primary-foreground hover:bg-primary-hover transition-colors"
+         data-ps="src/pages/soins.astro:eg3k8n">
+          Prendre rendez-vous en ligne
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
